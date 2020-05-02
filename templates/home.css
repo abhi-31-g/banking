@@ -35,18 +35,6 @@ h3{
   font-size: 40px;
 }
 
-#buttonss{
-  display: flex;
-  color: white;
-  margin-top: 15%;
-}
-
-button{
-  text-decoration: none;
-  color: white;
-  font-size: 34px;
-}
-
 .column {
   float: left;
   width: 33.30%;
@@ -66,11 +54,13 @@ h2{
   text-align: center;
   padding-top: 40%;
   font-size: 60px;
+  text-decoration: none;
 }
 
 .both{
   padding-top: 34%;
 }
+
 
 #col1{
   background-image: url('icon.jpg');
@@ -89,4 +79,27 @@ h2{
 
 #p2{
   padding: 0.5%;
+}
+
+.formi{
+  padding: 10%;
+}
+
+.bafo{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.nametext{
+  font-size: 30px;
+}
+
+.mlinks{
+  color: black;
+  text-decoration: none;
+}
+
+.mlinks:hover{
+  font-size: 70px;
 }
