@@ -103,3 +103,27 @@ h2{
 .mlinks:hover{
   font-size: 70px;
 }
+
+#banker{
+  display: none;
+}
+
+#player{
+  display: none;
+}
+
+#banpla{
+  display: none;
+}
+
+#banker:target{
+  display: block;
+}
+
+#player:target{
+  display: block;
+}
+
+#banpla:target{
+  display: block;
+}

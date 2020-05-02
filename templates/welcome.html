@@ -7,32 +7,6 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
     <link rel="icon" href="icon.jpg">
     <title>Online Banking System</title>
-    <style media="screen">
-      {% if var=="banker" %}
-          #player{
-            display: none;
-          }
-          #banpla{
-            display: none;
-          }
-      {% endif %}
-      {% if var=="player" %}
-          #banker{
-            display: none;
-          }
-          #banpla{
-            display: none;
-          }
-      {% endif %}
-      {% if var=="banpla" %}
-          #banker{
-            display: none;
-          }
-          #player{
-            display: none;
-          }
-      {% endif %}
-    </style>
   </head>
   <body>
     <div class='page'>
@@ -44,14 +18,14 @@
       <div class="row">
         <div class="column" id="col1" style="background-color:#aaa;">
           <h2>
-            <a href="#banker" href="{% set var="banker" %}" class="mlinks">Banker</a>
+            <a href="#banker", class="mlinks" id="banlink">Banker</a>
           </h2>
         </div>
         <div class="column" id="col2" style="background-color:#bbb;">
-          <h2><a href="#player" class="mlinks" onclick="{# bank(2) #}">Player</a></h2>
+          <h2><a href="#player" class="mlinks" id="plalink">Player</a></h2>
         </div>
         <div class="column" id="col3" style="background-color:#ccc;">
-          <h2 class="both"><a href="#banpla" class="mlinks" onclick="{# bank(3) #}">Banker and Player</a><h2>
+          <h2 class="both"><a href="#banpla" class="mlinks" id="banplalink">Banker and Player</a><h2>
         </div>
       </div>
     </div>
