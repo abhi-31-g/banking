@@ -31,11 +31,11 @@
     </div>
     <div class="page" id="banker">
       <div class="formi">
-      <form class="bafo" action="{#url_for 'createtable()'#}" method="post">
+      <form class="bafo" action="{{url_for ('createtable')}}" method="post">
         <label for="Username">What should we call you?</label><br>
         <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br>
         <label for="players">How many People are Playing ?</label><br>
-        <input type="number" max="10" min="0" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
+        <input type="number" max="10" min="1" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
         <button type="submit" name="button" class="nametext">Create a Session !</button>
       </form>
     </div>
@@ -60,7 +60,7 @@
         <label for="Username">What should we call you?</label><br>
         <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br>
         <label for="players">How many People are Playing ?</label><br>
-        <input type="number" max="10" min="0" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
+        <input type="number" max="10" min="1" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
         <button type="submit" name="button" class="nametext">Create a Session !</button>
       </form>
     </div>

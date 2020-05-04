@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/{% block cssfile %} {% endblock %}') }}">
+    <link rel="stylesheet" href="tempbanker.css">
+    <link rel="icon" href="icon.jpg">
+    <title>Online Banking System - {% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <div class="page" id="page1">
+      {% block page1 %}
+      {% endblock %}
+    </div>
+    <div class="page" id="page2">
+      {% block page2 %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

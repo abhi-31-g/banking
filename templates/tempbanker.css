@@ -1,0 +1,14 @@
+html,body{
+  background-color: #302e2e;
+  height: 100%;
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+}
