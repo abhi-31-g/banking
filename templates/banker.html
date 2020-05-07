@@ -1,21 +1,24 @@
 {% extends 'layout1.html' %}
 
-{% block cssfile %}banker.css{% endblock %}
+{% block head %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/banker.css') }}">
+{% endblock %}
+
 {% block title %}Session Code{% endblock %}
 
 {% block page1 %}
-<div class="info">
   <h3> Welcome to your Session! Tell Other Players to Join your Game via the details below: </h3>
+  <br><br><br><br>
   <h1>SESSION CODE : {{sesscode}}</h1>
   <h1>PASSWORD : {{passw}}</h1>
+  <br><br><br><br>
   <h1><a href="#page2">View Logged In Players &#x21A1;</a></h1>
 
-</div>
 {% endblock %}
 {% block page2 %}
-<div class="info">
+
   <ol>
-    
+
   </ol>
 
-</div>
+{% endblock %}
