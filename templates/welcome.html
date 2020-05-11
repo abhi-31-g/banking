@@ -42,7 +42,7 @@
     </div>
     <div class="page" id="player">
       <div class="formi">
-        <form class="bafo" action="{#url_for 'login()'#}" method="post">
+        <form class="bafo" action="{{url_for ('login')}}" method="post">
           <label for="scode">What's the Session Code ?(provided by the banker)</label><br>
           <input type="text" name="scode" placeholder="Code" class="nametext"><br>
           <label for="passwd">Please Enter the Password</label><br>

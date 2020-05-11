@@ -12,13 +12,8 @@
   <h1>SESSION CODE : {{sesscode}}</h1>
   <h1>PASSWORD : {{passw}}</h1>
   <br><br><br><br>
-  <h1><a href="#page2">View Logged In Players &#x21A1;</a></h1>
-
-{% endblock %}
-{% block page2 %}
-
-  <ol>
-
-  </ol>
+  <form class="" action="{# url_for('bankpage',scode=sesscode)#}" method="get">
+    <h1><button type="submit">Go to the Banker's Page &#xbb;</button></h1>
+  </form>
 
 {% endblock %}
