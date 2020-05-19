@@ -1,0 +1,105 @@
+html,body{
+  background-color: #302e2e;
+  height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#wel {
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 50px;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+}
+
+#down{
+  color: white;
+  font-size: 60px;
+  text-decoration: none;
+  margin-left: 48%;
+  margin-top: 10%;
+  border: 2px solid white;
+  display: inline-block;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.column {
+  float: left;
+  width: 33.30%;
+  padding: 10px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2{
+  color: black;
+  text-align: center;
+  padding-top: 40%;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.both{
+  padding-top: 34%;
+}
+
+
+#col1{
+  background-image: url('icon.jpg');
+  background-blend-mode: soft-light;
+}
+
+#col2{
+  background-image: url('player1.jpg');
+  background-blend-mode: soft-light;
+}
+
+#col3{
+  background-image: url('bapl.jpg');
+  background-blend-mode: soft-light;
+}
+
+#p2{
+  padding: 0.5%;
+}
+
+.formi{
+  padding: 10%;
+}
+
+.bafo{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.nametext{
+  font-size: 30px;
+}
+
+.mlinks{
+  color: black;
+  text-decoration: none;
+}
+
+.mlinks:hover{
+  font-size: 70px;
+}

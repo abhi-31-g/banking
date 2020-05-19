@@ -1,0 +1,33 @@
+{% extends 'layout1.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/bankerspage.css')}}">
+{% endblock %}
+
+{% block title %}
+Banker's Page - {{'sesscode'}}
+{% endblock %}
+
+{% block page1 %}
+<h1>Welcome to The BANKER'S Page</h1>
+Your Session Code={{sesscode}}
+<table>
+  <tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Balance</th>
+    <th>Liabilities</th>
+    <th>Assets</th>
+  </tr>
+  {% for id,Name,Balance,Liabilities,Assets in data %}
+  <tr>
+    <td>{{ id }}</td>
+    <td>{{ Name }}</td>
+    <td>{{ Balance }}</td>
+    <td>{{ Liabilities }}</td>
+    <td>{{ Assets }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
