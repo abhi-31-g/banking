@@ -15,10 +15,10 @@ db = scoped_session(sessionmaker(bind=engine))
 def index():
   return render_template("welcome.html")
 
-@app.route("/banker?=login/",methods=["POST"])
+@app.route("/banker/login/",methods=["POST"])
 def createtable():
   username=request.form.get("Username")
-  players=int(request.form.get("players"))
+  #players=int(request.form.get("players"))
   password=str(random.randint(10000,99999))
   sessioncode=''.join(random.choices(string.ascii_uppercase, k = 8))
   passwi='#'+password+'$'
@@ -32,7 +32,7 @@ def createtable():
   db.close()
   return render_template("banker.html",sesscode=sessioncode,passw=password)
 
-@app.route("/player?=login/",methods=["POST"])
+@app.route("/player/login/",methods=["POST"])
 def login():
   scode=str(request.form.get("scode"))
   passwin=str(request.form.get("passwd"))
@@ -43,3 +43,8 @@ def login():
     return "WELCOME TO THE SESSION"
   else:
     return "UNKNOWN ERROR"
+
+@app.route("/<scode>",methods=["POST","GET"])
+def bankpage(scode):
+    data=db.execute("select * from "+ scode).fetchall()
+    return render_template("bankerspage.html",sesscode=scode,data=data)

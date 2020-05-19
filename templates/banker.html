@@ -12,7 +12,7 @@
   <h1>SESSION CODE : {{sesscode}}</h1>
   <h1>PASSWORD : {{passw}}</h1>
   <br><br><br><br>
-  <form class="" action="{# url_for('bankpage',scode=sesscode)#}" method="get">
+  <form class="" action="{{url_for('bankpage',scode=sesscode)}}" method="post">
     <h1><button type="submit">Go to the Banker's Page &#xbb;</button></h1>
   </form>
 
