@@ -18,7 +18,6 @@ def index():
 @app.route("/banker/login/",methods=["POST"])
 def createtable():
   username=request.form.get("Username")
-  #players=int(request.form.get("players"))
   password=str(random.randint(10000,99999))
   sessioncode=''.join(random.choices(string.ascii_uppercase, k = 8))
   passwi='#'+password+'$'
@@ -40,6 +39,9 @@ def login():
   passwin.strip('')
   passwic="#"+passwin+"$"
   if db.execute("select * from sessionslog where sesscode= :scode and password= :passwic ;",{"scode": scode,"passwic": passwic}).rowcount==1:
+    meinname=str(request.form.get("meinname"))
+    db.execute("insert into "+scode+" (Name,Balance) values(:meinname,0)",{'meinname': meinname})
+    db.commit()
     return "WELCOME TO THE SESSION"
   else:
     return "UNKNOWN ERROR"

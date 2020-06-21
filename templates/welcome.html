@@ -33,9 +33,7 @@
       <div class="formi">
       <form class="bafo" action="{{url_for ('createtable')}}" method="post">
         <label for="Username">What should we call you?</label><br>
-        <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br>
-        <label for="players">How many People are Playing ?</label><br>
-        <input type="number" max="10" min="1" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
+        <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br><br><br>
         <button type="submit" name="button" class="nametext">Create a Session !</button>
       </form>
     </div>
@@ -46,7 +44,9 @@
           <label for="scode">What's the Session Code ?(provided by the banker)</label><br>
           <input type="text" name="scode" placeholder="Code" class="nametext"><br>
           <label for="passwd">Please Enter the Password</label><br>
-          <input type="password" name="passwd" placeholder="Password" class="nametext"><br><br><br>
+          <input type="password" name="passwd" placeholder="Password" class="nametext"><br>
+          <label for="meinname">and your Name too....</label><br>
+          <input type="text" name="meinname" placeholder="Name" class="nametext"><br><br><br>
           <button type="submit" name="button" class="nametext">Log In as a Player !</button>
 
         </form>
